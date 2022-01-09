@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./main/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="text-center mt-3 mb-4">Yangiliklarni dodasi bizda</h1>
+      <section class="main-section container">
+        <div class="row">
+          <div class="film-left-top col-lg-3">
+            <div class="input-group flex-nowrap">
+              <input
+                type="text"
+                class="form-control mb-4"
+                placeholder="Issiq yangiliklar"
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
+
+            <select
+              class="form-select mb-4"
+              aria-label="Default select example"
+            >
+              <option selected>Eng yangi yangiliklar bizda!!!</option>
+              <option value="1">Dunyo yangiliklari</option>
+              <option value="2">O'zbekiston ichidagi yangiliklar</option>
+              <option value="3">Ilm fan yangiliklari</option>
+            </select>
+            <select
+              class="form-select mb-4"
+              aria-label="Default select example"
+            >
+              <option selected>Rating (high to low)</option>
+              <option value="1">High</option>
+              <option value="2">Low</option>
+            </select>
+
+            <button type="button" class="btn btn-primary mb-4">Qidirish</button>
+          </div>
+
+          <div class="col-lg-9">
+            <p class="d-inline-block">
+              Search Result: <span class="news-result">0</span>
+            </p>
+            <p class="alert-info d-block p-2 rounded">
+              Use the form on the left to search latest news
+            </p>
+
+            <ul class="news__list"></ul>
+            <div class="modal" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/news.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
